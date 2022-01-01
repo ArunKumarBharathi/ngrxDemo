@@ -1,0 +1,8 @@
+<div>
+    <p>Post Details</p>
+</div>
+<div *ngIf="post | async as postData">
+    <p>title: {{postData.title}}</p>
+    <p>id: {{postData.id}}</p>
+    <p>description: {{postData.description}}</p>
+</div>
